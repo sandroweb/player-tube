@@ -4,9 +4,9 @@
 ### About
 This jQuery plugin is helpful to add a YouTube video into your application using JavaScript.
 
-I created this code based the [YouTube API](https://developers.google.com/youtube/iframe_api_reference?hl=pt-BR).
+I created this code based on the [YouTube API](https://developers.google.com/youtube/iframe_api_reference?hl=pt-BR).
 
-This plugin too is available on [Bower](http://bower.io/).
+This plugin is also available on [Bower](http://bower.io/).
 ```
 bower install player-tube
 ```
@@ -19,7 +19,7 @@ bower install player-tube
 
 ### Usage
 
-To add a YouTube video in your application, the most params are setted in html tag. After, you'll need call your html tag using jQuery.
+To add a YouTube video in your application, first you have to create the HTML tag that will be the video container. In this tag you can set the video-id attribute (required), as other optionals. After, you'll need call your HTML tag using jQuery.
 
 #### 1. Html tag
 ```
@@ -35,15 +35,15 @@ $('.my-player').playerTube();
 But, it's not only this!!!
 
 
-### More html options
+### More HTML options
 
-The html tag gives more options to customize.
+The HTML tag gives more options to customize.
 
 #### video-show-mosaic
 Type: `Number`	
 Default: `0`	
 
-`1` - To display the mosaic when the video is completed.	
+`1` - To display the mosaic when the video ended.	
 `<div class="my-player" video-id="zdaTtlxUoOM" video-show-mosaic="1"></div>`
 
 
@@ -95,14 +95,14 @@ String of youtube list id.
 `<div class="my-player" video-id="zdaTtlxUoOM" video-list="UUifNHhodYK0S7A_QoxmsoCA"></div>`
 
 
-### More js options
+### Events
 
 
 #### onReady
 Type: `function`	
 Default: `undefined`	
 
-Call this method when the player is loaded.
+This event is dispatched when the player is loaded.
 ```
 $('.my-player').playerTube({
 	onReady: function (e) {
@@ -116,7 +116,7 @@ $('.my-player').playerTube({
 Type: `function`	
 Default: `undefined`	
 
-Call this method when the video start play.
+This event is dispatched when the video start to play.
 ```
 $('.my-player').playerTube({
 	onPlay: function (e) {
@@ -130,7 +130,7 @@ $('.my-player').playerTube({
 Type: `function`	
 Default: `undefined`	
 
-Call this method when the video is paused.
+This event is dispatched when the video is paused.
 ```
 $('.my-player').playerTube({
 	onPaused: function (e) {
@@ -144,7 +144,7 @@ $('.my-player').playerTube({
 Type: `function`	
 Default: `undefined`	
 
-Call this method when the video is completed.
+This event is dispatched when the video is completed.
 ```
 $('.my-player').playerTube({
 	onFinished: function (e) {
@@ -158,7 +158,7 @@ $('.my-player').playerTube({
 Type: `function`	
 Default: `undefined`	
 
-Call this method when the video is completed.
+This event is dispatched when the video is playing. Providing some useful information about the video state.
 ```
 $('.my-player').playerTube({
 	onUpdate: function (e) {
@@ -173,7 +173,7 @@ $('.my-player').playerTube({
 
 ### To debug on console
 
-To you control the player with the YouTube Api methods and vars, you'll use this:
+To you control the player with the YouTube Api methods and vars, you can use this:
 ```
 window.playersTube.getPlayerById('zdaTtlxUoOM').playVideo();
 ```
