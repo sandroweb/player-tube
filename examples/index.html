@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	.my-player {
+		display: block;
+		width: 700px;
+		height: 400px;
+	}
+	</style>
+</head>
+<body>
+	<div class="my-player" video-id="zdaTtlxUoOM"></div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../dist/player-tube.min.js"></script>
+	<script type="text/javascript">
+		$('.my-player').playerTube({
+			onReady: function (e) {
+				console.log('##', e.type, e);
+			},
+			onPlay: function (e) {
+				console.log('##', e.type, e);
+			},
+			onPaused: function (e) {
+				console.log('##', e.type, e);
+			},
+			onFinished: function (e) {
+				console.log('##', e.type, e);
+			},
+			onUpdate: function (e) {
+				console.log('##', e.type, e);
+			},
+			onError: function (e) {
+				console.log('##', e.type, e);
+			}
+		});
+	</script>
+</body>
+</html>
