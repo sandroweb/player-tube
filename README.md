@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PlayerTube
 
 
@@ -176,3 +177,6 @@ window.playersTube.getPlayerById('zdaTtlxUoOM').playVideo();
 
 ### Doubts
 [sandro@sandrosantos.art.br](mailto:sandro@sandrosantos.art.br)
+=======
+
+>>>>>>> 405546ebb9362ed593983e81d50ca73f40c055f2
