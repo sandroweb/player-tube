@@ -7,6 +7,7 @@
      * https://developers.google.com/youtube/iframe_api_reference
      * window.playersTube.getPlayerById('youtubeVideoId').getVolume();
      */
+
     $.fn.playerTube = function (options) {
         options = (options === undefined) ? {} : options;
         win.playersTube = win.playersTube || {};
