@@ -6,6 +6,11 @@ This jQuery plugin is helpful to add a YouTube video into your application using
 
 I created this code based the [YouTube API](https://developers.google.com/youtube/iframe_api_reference?hl=pt-BR).
 
+This plugin too is available on [Bower](http://bower.io/).
+```
+bower install player-tube
+```
+
 
 ### Dependences
 
