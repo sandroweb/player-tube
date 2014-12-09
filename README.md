@@ -1,4 +1,4 @@
-# PlayerTube
+# PlayerTube [![Build Status](https://travis-ci.org/sandroweb/player-tube.svg?branch=master)](https://travis-ci.org/sandroweb/player-tube)
 
 
 ### About
