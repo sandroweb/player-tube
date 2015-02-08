@@ -16,6 +16,8 @@
         var content = $(this),
             videoId = content.attr('video-id'),
             videoName = 'video' + videoId.toLowerCase(),
+            videoWidth = content.attr('video-width') || '100%',
+            videoHeight = content.attr('video-height') || '100%',
             showMosaic = content.attr('video-show-mosaic'),
             showControls = content.attr('video-show-controls'),
             showInfo = content.attr('video-show-info'),
@@ -129,8 +131,8 @@
 
         function buildYoutube() {
             content.player = new YT.Player(videoName, {
-                height: '100%',
-                width: '100%',
+                height: videoHeight,
+                width: videoWidth,
                 videoId: videoId,
                 origin: win.location.protocol + '//' + win.location.host,
                 playerVars: {
