@@ -3,6 +3,8 @@ module.exports = function (grunt) {
 
     "use strict";
 
+    var jsBanner = '/*\n * jQuery Plugin to insert an YouTube player into your site.\n * https://github.com/sandroweb/player-tube\n */';
+
     grunt.initConfig({
 
         jslint: {
@@ -26,16 +28,30 @@ module.exports = function (grunt) {
         },
 
         uglify: {
-            main: {
+            mainMin: {
                 options: {
                     beautify: false,
                     sourceMap: true,
                     compress: {
                         drop_console: true
-                    }
+                    },
+                    banner: jsBanner
                 },
                 files: {
                     'dist/player-tube.min.js': ['source/player-tube.js']
+                }
+            },
+            main: {
+                options: {
+                    beautify: false,
+                    sourceMap: false,
+                    compress: {
+                        drop_console: true
+                    },
+                    banner: jsBanner
+                },
+                files: {
+                    'dist/player-tube.js': ['source/player-tube.js']
                 }
             }
         },
