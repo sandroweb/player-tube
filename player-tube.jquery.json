@@ -1,0 +1,36 @@
+{
+  "name": "player-tube",
+  "title": "PlayerTube",
+  "description": "This jQuery plugin is helpful to add a YouTube video into your application using JavaScript.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/sandroweb/player-tube",
+  "demo": "https://github.com/sandroweb/player-tube",
+  "docs": "https://github.com/sandroweb/player-tube/blob/master/README.md",
+  "author": {
+    "name": "Sandro Santos",
+    "email": "sandro@sandrosantos.art.br",
+    "url": "http://sandrosantos.art.br"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sandroweb/player-tube.git"
+  },
+  "bugs": "https://github.com/sandroweb/player-tube/issues",
+  "dependencies": {
+    "jquery": ">=2.1.1"
+  },
+  "keywords": [
+    "iframe",
+    "youtube",
+    "you-tube",
+    "player",
+    "video",
+    "jquery"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ]
+}
