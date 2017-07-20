@@ -1,4 +1,5 @@
 /*global jQuery, window, YT*/
+/*jslint this*/
 (function ($, win, doc) {
 
     'use strict';
@@ -9,7 +10,7 @@
      */
 
     $.fn.playerTube = function (options) {
-        options = (options === undefined) ? {} : options;
+        options = options || {};
         win.playersTube = win.playersTube || {};
         win.playersTube.videos = win.playersTube.videos || [];
 
@@ -100,7 +101,6 @@
         }
 
         function onStateChange(s) {
-            console.log('#', s);
             switch (s) {
             case -1:
                 stopUpdateCallback();
@@ -124,6 +124,12 @@
                 stopUpdateCallback();
                 if (options.onPaused !== undefined) {
                     options.onPaused(getEventObject('onpaused'));
+                }
+                break;
+            case 3:
+                startUpdateCallback();
+                if (options.onBuffering !== undefined) {
+                    options.onBuffering(getEventObject('onbuffering'));
                 }
                 break;
             }

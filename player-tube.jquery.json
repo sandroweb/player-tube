@@ -2,7 +2,7 @@
   "name": "player-tube",
   "title": "PlayerTube",
   "description": "This jQuery plugin is helpful to add a YouTube video into your application using JavaScript.",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "homepage": "https://github.com/sandroweb/player-tube",
   "demo": "https://github.com/sandroweb/player-tube",
   "docs": "https://github.com/sandroweb/player-tube/blob/master/README.md",

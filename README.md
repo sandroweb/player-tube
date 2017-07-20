@@ -1,4 +1,4 @@
-# PlayerTube [![Build Status](https://travis-ci.org/sandroweb/player-tube.svg?branch=master)](https://travis-ci.org/sandroweb/player-tube)
+# PlayerTube
 
 
 ### About
@@ -148,6 +148,20 @@ This event is dispatched when the video is completed.
 ```
 $('.my-player').playerTube({
 	onFinished: function (e) {
+		console.log(e.type, e);
+	}
+});
+```
+
+
+#### onBuffering
+Type: `function`	
+Default: `undefined`	
+
+This event is dispatched when the video is loading.
+```
+$('.my-player').playerTube({
+	onBuffering: function (e) {
 		console.log(e.type, e);
 	}
 });
